@@ -28,6 +28,7 @@ public class GlobalExceptionHandler {
         return switch (httpStatus) {
             case BAD_REQUEST -> HttpStatusInfo.BAD_REQUEST;
             case NOT_FOUND -> HttpStatusInfo.NOT_FOUND;
+            case UNAUTHORIZED -> HttpStatusInfo.UNAUTHORIZED;
             default -> HttpStatusInfo.INTERNAL_SERVER_ERROR;
         };
     }

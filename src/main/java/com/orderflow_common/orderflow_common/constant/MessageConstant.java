@@ -11,7 +11,8 @@ public class MessageConstant {
     @Getter
     public enum Error {
         Internal_ERROR ("Internal ERROR", HttpStatus.INTERNAL_SERVER_ERROR, "Unknown Exception is Occurred."),
-        NOT_FOUND_ERROR("NOT FOUND", HttpStatus.NOT_FOUND, "Record Not Found In The System");
+        NOT_FOUND_ERROR("NOT FOUND", HttpStatus.NOT_FOUND, "Record Not Found In The System"),
+        UNAUTHORIZED("Unauthorized", HttpStatus.UNAUTHORIZED, "You are not authorized to access this resource.");
 
         public final String errorCode;
         public final HttpStatus status;

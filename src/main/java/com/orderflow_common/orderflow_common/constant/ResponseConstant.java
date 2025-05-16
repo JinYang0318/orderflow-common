@@ -16,6 +16,7 @@ public class ResponseConstant {
         CREATED(201, "Created"),
         BAD_REQUEST(400, "Bad Request"),
         NOT_FOUND(404, "Not Found"),
+        UNAUTHORIZED(401, "You are not authorized to access this resource."),
         INTERNAL_SERVER_ERROR(500, "An Error Occurred While Processing Your Request.");
 
         private final int status;
